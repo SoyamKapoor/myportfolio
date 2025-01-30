@@ -10,13 +10,10 @@ Welcome to the repository for my personal portfolio website! This project showca
 This portfolio is built using Next.js and TypeScript to create a modern, responsive, and performant web experience. It's designed to be a central hub for anyone interested in learning more about me and my work.
 
 **Key Features:**
-
-*   **[List a few key sections or features of your portfolio, e.g.:]**
     *   **Homepage:**  A brief introduction about me and my skills.
     *   **Projects Section:** Showcases my notable projects with descriptions, links, and technologies used.
     *   **About Me Page:**  More detailed information about my background, education, and interests.
     *   **Skills Section:**  Highlights my technical skills and proficiencies.
-    *   **Contact Form:**  A way for visitors to get in touch with me.
     *   **Responsive Design:**  Looks great on desktops, tablets, and mobile devices.
     *   **Fast Performance:**  Built with Next.js for optimized loading and navigation.
 
