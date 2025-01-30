@@ -1,8 +1,9 @@
 # My Portfolio - Soojal Kumar
 
 Welcome to the repository for my personal portfolio website! This project showcases my skills, projects, and experience as a developer.
+![image](https://github.com/user-attachments/assets/7f3a3d34-ae79-4251-ac91-9033116945c6)
 
-**[Optional: Link to your live portfolio website here if it's deployed, e.g.,](https://soojalkumar.com)**
+**[Link](https://soojal.vercel.app)**
 
 ## About
 
