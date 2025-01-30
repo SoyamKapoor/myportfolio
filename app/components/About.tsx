@@ -23,7 +23,7 @@ const About = ({ id }: { id: string }) => {
           className="glass-card p-8 mb-12"
         >
           <p className="text-lg mb-6" >
-            I'm a passionate Computer Science student at DHA Suffa University, with a keen interest in designing and development.
+            I'm a passionate Computer Science student at DHA Suffa University, with a keen interest in design and development.
             My journey in tech has equipped me with skills in various programming
             languages and frameworks, allowing me to build engaging and functional applications. 
           </p>
@@ -33,7 +33,7 @@ const About = ({ id }: { id: string }) => {
           </p>
            <p className="text-lg">
 
-            When i am not studying, I work on my YouTube channel called Phillusion which is abou philosophy and
+            When i am not studying, I work on my YouTube channel called Phillusion which is about philosophy and
             other less interesting things we think about.
             
           </p>
