@@ -24,10 +24,7 @@ This portfolio is built using Next.js and TypeScript to create a modern, respons
 *   **Framework:** [Next.js](https://nextjs.org/) (React framework for production)
 *   **Language:** [TypeScript](https://www.typescriptlang.org/) (for type safety and better code organization)
 *   **Styling:** [Tailwind CSS](https://tailwindcss.com/) or [Your CSS Approach - e.g., CSS Modules, Styled Components, Plain CSS] (for utility-first CSS)
-*   **[Optional: List any other libraries or technologies you used, e.g.,]**
-    *   [Framer Motion](https://www.framer.com/motion/) (for animations)
-    *   [Vercel/Netlify Functions](https://vercel.com/docs/functions) or [Netlify Functions](https://docs.netlify.com/functions/overview/) (if you used serverless functions for contact form or other backend logic)
-    *   [Any UI component libraries]
+
 
 ## Getting Started
 
