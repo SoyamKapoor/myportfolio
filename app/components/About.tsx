@@ -33,7 +33,7 @@ const About = ({ id }: { id: string }) => {
           </p>
            <p className="text-lg">
 
-            When i am not studying, I work on my YouTube channel called Phillusion which is about philosophy and
+            When I am not studying, I work on my YouTube channel called Phillusion which is about philosophy and
             other less interesting things we think about.
             
           </p>
