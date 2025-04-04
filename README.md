@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # My Portfolio - Soojal Kumar
 
 Welcome to the repository for my personal portfolio website! This project showcases my skills, projects, and experience as a developer.
@@ -63,3 +64,6 @@ To create a production-ready build of your portfolio:
 
 ```bash
 npm run build # or yarn build or pnpm build
+=======
+# myportfolio
+>>>>>>> 4ae25f01ee99d51e792d6471e6e35cda85e81307
