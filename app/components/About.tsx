@@ -22,44 +22,38 @@ const About = ({ id }: { id: string }) => {
           viewport={{ once: true }}
           className="glass-card p-8 mb-12"
         >
-          <p className="text-lg mb-6" >
-            I'm a passionate Computer Science student at DHA Suffa University, with a keen interest in design and development.
-            My journey in tech has equipped me with skills in various programming
-            languages and frameworks, allowing me to build engaging and functional applications. 
+          <p className="text-lg mb-6">
+            I am a dedicated Python Developer with a strong background in data science. My focus is on building scalable machine learning models, data-driven solutions, and real-world applications. I am currently pursuing a degree in Computer Systems Engineering and constantly enhancing my skills to stay ahead in the tech world.
           </p>
-          <p className="text-lg mb-6" >Currently you can find me participating
-             in coding competitions, working on personal projects, or
-            exploring new technologies to expand my skill set.
+          <p className="text-lg mb-6">
+            My passion for coding extends beyond the development of functional applications — I strive to create impactful projects that solve complex challenges. I am driven by continuous learning and the exploration of new technologies that push the boundaries of what’s possible.
           </p>
-           <p className="text-lg">
-
-            When I am not studying, I work on my YouTube channel called Phillusion which is about philosophy and
-            other less interesting things we think about.
-            
+          <p className="text-lg">
+            Outside of coding, I run a YouTube channel, "Soyam's World", where I explore the latest trends in technology and data science, and share insightful content for both beginners and tech enthusiasts.
           </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {[
+          {[ 
             {
               icon: Code2,
-              title: "Developer",
-              description: "Experienced in both frontend and backend technologies",
+              title: "Python Developer",
+              description: "Specializing in building scalable applications, data analysis, and developing machine learning models.",
             },
             {
               icon: Brain,
-              title: "Designer",
-              description: "I also enjoy designing visually appealing experiences. ",
+              title: "Data Science Enthusiast",
+              description: "Passionate about extracting valuable insights from data, modeling, and using machine learning algorithms.",
             },
             {
               icon: Rocket,
-              title: "Fast Learner",
-              description: "Always eager to learn and adapt to new technologies",
+              title: "Continuous Learner",
+              description: "Always eager to learn new technologies and improve my skill set to deliver innovative solutions.",
             },
             {
               icon: Heart,
-              title: "Collaborative",
-              description: "I enjoy working in teams and brainstorming innovative solutions",
+              title: "Collaborative Spirit",
+              description: "Enjoy collaborating with teams to brainstorm, design, and implement creative solutions to challenging problems.",
             },
           ].map((item, index) => (
             <motion.div
@@ -83,4 +77,3 @@ const About = ({ id }: { id: string }) => {
 }
 
 export default About
-

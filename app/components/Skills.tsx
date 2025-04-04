@@ -1,33 +1,39 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Code2, Database, Globe, Layout, Server, Shield, Terminal, Cpu } from "lucide-react"
+import { Code2, Database, Cpu, GitBranch, FileText } from "lucide-react"
 
 const skillCategories = [
   {
-    title: "Frontend",
-    icon: Layout,
-    skills: ["React.js", "HTML/CSS", "Bootstrap", "Tailwind"],
+    title: "Programming Languages",
+    icon: Code2,
+    skills: ["Python", "C/C++", "Java", "Arduino Programming", "MATLAB Programming", "Assembly Language"],
     gradient: "from-purple-500 to-pink-500",
   },
   {
-    title: "Backend",
-    icon: Server,
-    skills: ["Python", "Java", "C/C++", "Flask"],
+    title: "Data Science & Machine Learning",
+    icon: Cpu,
+    skills: ["Pandas", "NumPy", "Matplotlib"],
     gradient: "from-blue-500 to-cyan-500",
   },
   {
-    title: "Database",
+    title: "Database Management",
     icon: Database,
-    skills: ["MySQL", "MS Access", "Firestore"],
+    skills: ["MySQL"],
     gradient: "from-green-500 to-emerald-500",
   },
   {
-    title: "Tools",
-    icon: Terminal,
-    skills: ["VS Code", "Figma", "Netbeans", "IntelliJ", "Google Colab", "Github"],
+    title: "Development Tools & Platforms",
+    icon: GitBranch,
+    skills: ["Google Colab", "Jupyter Notebook", "VS Code", "Git", "GitHub", "IntelliJ IDEA"],
     gradient: "from-violet-500 to-purple-500",
   },
+  {
+    title: "Other Technical Competencies",
+    icon: FileText,
+    skills: ["Microsoft Office Suite", "Debugging Techniques", "Algorithmic Problem Solving", "Technical Communication"],
+    gradient: "from-red-500 to-orange-500",
+  }
 ]
 
 const Skills = ({ id }: { id: string }) => {
@@ -42,7 +48,7 @@ const Skills = ({ id }: { id: string }) => {
       >
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-gradient">Skills & Technologies</h2>
         <div className="grid gap-8 md:grid-cols-2">
-            {skillCategories.map((category, index) => (
+          {skillCategories.map((category, index) => (
             <motion.div
               key={category.title}
               initial={{ opacity: 0, y: 20 }}
@@ -79,4 +85,3 @@ const Skills = ({ id }: { id: string }) => {
 }
 
 export default Skills
-

@@ -2,67 +2,90 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { Github, ExternalLink } from "lucide-react" // Import ExternalLink
+import { Github,ExternalLink } from "lucide-react" // Import ExternalLink
 import { useState } from "react"
 
-const projects = {
+type Project = {
+  title: string;
+  description: string;
+  image: string;
+  tags: string[];
+  figma?: string;
+  github?: string;
+  youtube?: string;
+};
+
+const projects: {
+  all: Project[];
+  designing: Project[];
+  development: Project[];
+} = {
   all: [],
   designing: [
     {
-      title: "Rydesync",
-      description: "A UI design for a seamless ride-sharing platform, created using Figma.",
-      image: "/ryde.png?height=600&width=800",
-      tags: ["Figma", "UI/UX Design", "Ride Sharing"],
-      figma: "https://www.behance.net/gallery/184195431/Rydesync-Carpooling-Website-UI-Template", // Figma link
+      title: "Central Cafeteria, Sukkur IBA University in 3D",
+      description: "3D visualization of the Central Cafeteria, Sukkur IBA University using AutoCAD.",
+      image: "/central_cafeteria.png",
+      tags: ["AutoCAD", "3D Design", "Architecture"],
+      github: "https://github.com/SoyamKapoor/central_cafeterai_3D"
     },
-    {
-      title: "Gradientica",
-      description: "A UI design for website about beautiful gradients art gallery, designed in Figma.",
-      image: "/grad.png?height=600&width=800",
-      tags: ["Figma", "UI/UX Design", "Gradients"],
-      figma: "https://www.behance.net/gallery/168766897/Gradientica-Art-Gallery-Website-Template", // Figma link
-    },
-
   ],
   development: [
     {
-      title: "DMC Railway",
-      description: "A full-stack Railway Reservation System using Java Swing for UI and MySQL for data storage.",
-      image: "/railway.png?height=600&width=800",
-      tags: ["Java", "Swing", "MySQL", "Netbeans"],
-      github: "https://github.com/Soojal-Kumar/DMC-Railway-Reservation", // GitHub link
+      title: "Future of Smart Living: IOT-Driven Home Automation in Cisco Packet Tracer",
+      description: "Home automation system using IoT principles and Cisco Packet Tracer for smart home applications.",
+      image: "CCN_THUMBNAIL.png",
+      tags: ["IoT", "Cisco Packet Tracer", "Home Automation"],
+      github: "https://github.com/SoyamKapoor/future_of_smart_living_iot_driven_home_automation_in_cisco_packet_tracer",
     },
     {
-      title: "Everdo Todo App",
-      description:
-        "A task management mobile app using React Native, with cloud integration via Firebase and Firestore.",
-      image: "/everto.png?height=600&width=800",
-      tags: ["React Native", "Firebase", "Firestore"],
-      github: "https://github.com/Soojal-Kumar/Everdo-Todo-App", // GitHub link
-
+      title: "SYNIX mini OS",
+      description: "A mini operating system developed using C++ with features like task management and file handling.",
+      image: "/synix_os.png",
+      tags: ["C++", "Operating System", "Development"],
     },
     {
-      title: "DSA Visualizer",
-      description: "An interactive tool to visualize data structures and algorithms for better learning comprehension.",
-      image: "/dsa.png?height=600&width=800",
-      tags: ["Java", "Swing", "Netbeans", "Data Structures", "Algorithms"],
-      github: "https://github.com/Soojal-Kumar/DSA-Visualizer", // GitHub link
+      title: "Smart SyncEdge Platform",
+      description: "A platform designed for seamless integration of smart devices, using edge computing concepts.",
+      image: "/smart_syncedge.png",
+      tags: ["Edge Computing", "IoT", "Smart Devices"],
+      github: "https://github.com/SoyamKapoor/smart_syncedge_platform"
     },
     {
-      title: "Nutriscan",
-      description: "A system where users scan food barcodes to fetch product details and predict nutritional grades.",
-      image: "/ntsc.png?height=600&width=800",
-      tags: ["Python", "Machine Learning", "Data Processing"],
-      github: "https://github.com/Soojal-Kumar/Nutriscan", // GitHub link
+      title: "Speech to Text Using Python",
+      description: "A Python-based speech recognition application that converts spoken language into text.",
+      image: "/speech_to_text.png?height=600&width=800",
+      tags: ["Python", "Speech Recognition", "Machine Learning"],
+      github: "https://github.com/SoyamKapoor/speech_to_text_using_python",
     },
-
+    {
+      title: "Car Parking Slot Identifier",
+      description: "An Arduino project that identifies available parking slots in a parking lot using sensors.",
+      image: "/car_parking_slot_identifier.png",
+      tags: ["Arduino", "Sensors", "IoT", "Parking Management"],
+      github: "https://github.com/SoyamKapoor/car_parking_slot_identifier",
+    },
+    {
+      title: "Virtual Assistant C++",
+      description: "A C++ based virtual assistant capable of performing basic tasks like web searches and reminders.",
+      image: "/virtual_assistant.png",
+      tags: ["C++", "Virtual Assistant", "AI"],
+      github: "https://github.com/SoyamKapoor/virtual_assistant",
+    },
+    {
+      title: "Smart Dustbin Using Arduino Uno",
+      description: "An Arduino-based smart dustbin that automatically opens and closes based on proximity.",
+      image: "/smart_dustbin.png",
+      tags: ["Arduino", "IoT", "Automation", "Smart Systems"],
+      github: "https://github.com/SoyamKapoor/smart_dustbin_using_arduino_uno",
+    },
   ],
-}
+};
 
 // Populate the 'all' category with all projects
 projects.all = [...projects.designing, ...projects.development]
 
-const ProjectCard = ({ project, index }) => {
+const ProjectCard = ({ project, index }: { project: Project; index: number }) => {
   // Determine if it's a 'designing' project based on the presence of 'figma' property
   const isDesigningProject = project.figma !== undefined;
 
@@ -112,7 +135,8 @@ const ProjectCard = ({ project, index }) => {
 };
 
 const Projects = ({ id }: { id: string }) => {
-  const [activeCategory, setActiveCategory] = useState("all")
+  type ProjectCategory = keyof typeof projects;
+  const [activeCategory, setActiveCategory] = useState<ProjectCategory>("all");
 
   const categories = Object.keys(projects)
 
@@ -131,7 +155,7 @@ const Projects = ({ id }: { id: string }) => {
             {categories.map((category) => (
               <motion.button
                 key={category}
-                onClick={() => setActiveCategory(category)}
+                onClick={() => setActiveCategory(category as ProjectCategory)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                   activeCategory === category
                     ? "bg-purple-600 text-white"
@@ -162,4 +186,4 @@ const Projects = ({ id }: { id: string }) => {
   )
 }
 
-export default Projects
+export default Projects;

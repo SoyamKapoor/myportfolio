@@ -8,7 +8,7 @@ import Journey from "./components/Journey"
 import Projects from "./components/Projects"
 import Skills from "./components/Skills"
 import Contact from "./components/Contact"
-import { Github, Mail, DribbbleIcon as Behance, FileUser, Youtube } from "lucide-react"
+import { Github, Mail, Linkedin, FileUser, Youtube } from "lucide-react"
 import Image from "next/image"
 
 export default function Home() {
@@ -44,11 +44,11 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-br from-purple-500/30 to-pink-500/30" />
               </div>
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DALL%C2%B7E%202023-01-09%2000.06.41%20-%20Digital%20art,%20portrait%20of%20A%20boy%20with%20his%20half%20face%20melted%20in%20psychedelics-VQUwvVUwjiFxgf5rOVzHcnblDYebBg.png"
-                alt="Profile"
-                fill
-                className="object-cover rounded-full"
-              />
+  src="/Portfolio_picture.webp"  // Direct link for image
+  alt="Profile"
+  fill
+  className="object-cover rounded-full"
+/>
             </motion.div>
 
             <motion.h1
@@ -58,8 +58,8 @@ export default function Home() {
               className="text-4xl md:text-7xl font-bold mb-4"
             >
               Hi, I am{" "}
-              <span className="creative-text-effect" data-text="Soojal Kumar">
-                Soojal Kumar
+              <span className="creative-text-effect" data-text="Soyam Kapoor">
+                Soyam Kapoor
               </span>
             </motion.h1>
 
@@ -69,7 +69,7 @@ export default function Home() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="text-2xl md:text-4xl text-purple-300 mb-8"
             >
-              Designer + Developer
+              Python Developer | Data Science Enthusiast | Problem Solver 
             </motion.h2>
 
             <motion.div
@@ -78,12 +78,26 @@ export default function Home() {
               transition={{ delay: 0.7, duration: 0.8 }}
               className="flex justify-center gap-6"
             >
-              {[
-                { icon: Github, href: "https://github.com/Soojal-Kumar" },
-                { icon: Mail, href: "mailto:soooojalkumar@gmail.com" },
-                { icon: FileUser, href: "https://drive.google.com/file/d/1NsqRzOP6DpjHKZG_iV-wSaH-kqxRSOAw/view" },
-                { icon: Youtube, href: "https://www.youtube.com/@philllusion" },
-              ].map((social, index) => (
+              {[{
+                icon: Github,
+                href: "https://github.com/SoyamKapoor"
+              },
+              {
+                icon: Linkedin,
+                href: "https://www.linkedin.com/in/soyamkapoor/"
+              },
+              {
+                icon: Mail,
+                href: "mailto:kapoorsoyam5@gmail.com"
+              },
+              {
+                icon: FileUser,
+                href: "https://drive.google.com/file/d/1VM8FFH9ES42QYmkT9qpyhIMybVDMOQjE/view?usp=drive_link"
+              },
+              {
+                icon: Youtube,
+                href: "https://youtube.com/@soyamsworld?si=bMXdvQNvyAgszplg"
+              }].map((social, index) => (
                 <motion.a
                   key={index}
                   href={social.href}
@@ -109,4 +123,3 @@ export default function Home() {
     </div>
   )
 }
-

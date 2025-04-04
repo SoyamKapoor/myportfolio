@@ -50,9 +50,10 @@ const Navigation = () => {
     >
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="flex justify-between items-center">
-          <button onClick={() => handleClick("top")} className="text-xl font-bold text-gradient">
-            ~/cs211024
-          </button>
+        <button onClick={() => handleClick("top")} className="text-xl font-bold text-gradient">
+  ~/Soyam.ai
+</button>
+
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}

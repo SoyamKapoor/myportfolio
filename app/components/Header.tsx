@@ -13,7 +13,7 @@ const Header = () => {
     >
       <nav className="container mx-auto px-6 py-3 flex justify-between items-center">
         <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className="text-2xl font-bold">
-             Soojal Kumar
+             Soyam Kapoor
         </motion.div>
         <ul className="flex space-x-4">
           {["About", "Skills", "Projects", "Contact"].map((item) => (

@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Mail, Phone, Github, Linkedin, Youtube, Dribbble, FileUser} from "lucide-react" // Import Youtube icon
+import { Mail, Phone, Github, Linkedin, Youtube, FileUser } from "lucide-react" // Import Youtube and Linkedin icons
 import Link from 'next/link';
 
 const Contact = ({ id }: { id: string }) => {
@@ -29,14 +29,13 @@ const Contact = ({ id }: { id: string }) => {
               Connect with me through these platforms:
             </p>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-8"> {/* Icon Grid Layout */}
-              {[
-                { icon: Mail, href: "mailto:soooojalkumar@gmail.com", label: "Email" },
-                { icon: Phone, href: "tel:+923362747628", label: "Phone" },
-                { icon: Github, href: "https://github.com/Soojal-Kumar", label: "GitHub" },
-                { icon: Dribbble, href: "https://behance.net/soojalcharlia", label: "Behance" }, // Replace with your LinkedIn URL
-                { icon: Youtube, href: "https://www.youtube.com/@philllusion", label: "YouTube" }, // Added YouTube icon
-                { icon: FileUser, href: "https://drive.google.com/file/d/1NsqRzOP6DpjHKZG_iV-wSaH-kqxRSOAw/view", label: "My CV"},
-
+              {[ 
+                { icon: Mail, href: "mailto:kapoorsoyam5@gmail.com", label: "Email" },
+                { icon: Phone, href: "tel:+923174754494", label: "Phone" },
+                { icon: Github, href: "https://github.com/SoyamKapoor", label: "GitHub" },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/soyamkapoor/", label: "LinkedIn" }, // Added LinkedIn icon
+                { icon: Youtube, href: "https://youtube.com/@soyamsworld?si=qpvRrzbcAxWa1HUr", label: "YouTube" },
+                { icon: FileUser, href: "https://drive.google.com/file/d/1VM8FFH9ES42QYmkT9qpyhIMybVDMOQjE/view?usp=sharing", label: "My CV" },
               ].map((social, index) => (
                 <motion.div
                   key={index}

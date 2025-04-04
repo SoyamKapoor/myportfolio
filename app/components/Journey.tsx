@@ -6,24 +6,24 @@ import { GraduationCap, Calendar } from "lucide-react"
 const journeyData = [
   {
     type: "education",
-    title: "Bachelor of Science in Computer Science",
-    institution: "DHA Suffa University",
-    date: "Aug. 2021 – Present",
+    title: "Bachelor of Engineering in Computer Systems Engineering",
+    institution: "Sukkur IBA University",
+    date: "Sept. 2022 – Present",
     details: [
-      "Currently pursuing a degree in Computer Science",
+      "Currently pursuing a degree in Computer Systems Engineering",
       "Participating in various coding competitions and projects",
-      "Current CGPA: 3.4",
+      "Current CGPA: 3.61",
     ],
   },
   {
     type: "education",
     title: "Intermediate in Pre-Engineering",
-    institution: "Govt. Degree College",
-    date: "May 2020 – May 2021",
+    institution: "City School & College Pano Aqil",
+    date: "May 2021 – May 2022",
     details: [
       "Completed pre-engineering studies",
       "Developed a strong interest in computers and softwares",
-      "Achieved 91% in final examinations",
+      "Achieved 85% in final examinations",
     ],
   },
 ]
@@ -53,7 +53,7 @@ const Journey = ({ id }: { id: string }) => {
                 <GraduationCap className="w-8 h-8 text-purple-400" />
                 <div>
                   <h3 className="text-xl font-bold">{item.title}</h3>
-                  <p className="text-gray-300">{item.type === "education" ? item.institution : item.company}</p>
+                  <p className="text-gray-300">{item.institution}</p>
                 </div>
               </div>
               <div className="flex items-center gap-2 mb-4 text-sm text-gray-400">

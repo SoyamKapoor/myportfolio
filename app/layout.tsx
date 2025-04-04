@@ -4,8 +4,8 @@ import { Inter } from "next/font/google"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Soojal Kumar - Portfolio",
-  description: "A showcase of Soojal Kumar's work and skills",
+    title: "Soyam Kapoor | Python Developer • Innovator • Creator",
+    description: "Explore projects, skills, and creative work by Soyam Kapoor. From AI to Arduino, it's all here!",
   icons: {
     icon: [
       { url: '/favicon.ico' }, // Default favicon, often .ico in public folder
