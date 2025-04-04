@@ -1,6 +1,6 @@
 # My Portfolio - Soyam Kapoor
 Welcome to the repository for my personal portfolio website! This project showcases my skills, projects, and experience as a developer.
-![image](https://github.com/user-attachments/assets/7f3a3d34-ae79-4251-ac91-9033116945c6)
+![image](https://drive.google.com/uc?export=view&id=1Sm9uqv3ZJFzYQnSB933fAykQij8T3wXL)
 
 **[Link](https://soyam.vercel.app)**
 
@@ -55,13 +55,3 @@ To run this project locally, follow these steps:
 
 2.  **Open in your browser:**
     Visit [http://localhost:3000](http://localhost:3000) in your browser to view the portfolio.
-
-## Building for Production
-
-To create a production-ready build of your portfolio:
-
-```bash
-npm run build # or yarn build or pnpm build
-=======
-# myportfolio
->>>>>>> 4ae25f01ee99d51e792d6471e6e35cda85e81307
