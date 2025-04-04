@@ -1,8 +1,7 @@
 # My Portfolio - Soyam Kapoor
 Welcome to the repository for my personal portfolio website! This project showcases my skills, projects, and experience as a developer.
 ![image](https://drive.google.com/uc?export=view&id=1Sm9uqv3ZJFzYQnSB933fAykQij8T3wXL)
-
-**[Link](https://soyam.vercel.app)**
+**[https://soyam.vercel.app](https://soyam.vercel.app)**
 
 ## About
 
